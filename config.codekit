@@ -4810,17 +4810,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/mystery.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 33423,
-		"inputAbbreviatedPath": "\/img\/mystery.jpg",
-		"outputAbbreviatedPath": "\/img\/mystery.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/mystery.png": {
 		"fileType": 32768,
 		"ignore": 0,
