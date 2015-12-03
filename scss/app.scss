@@ -1,0 +1,141 @@
+@charset 'utf-8';
+
+@import 'foundation';
+@import 'settings';
+@import "animate";
+
+@include foundation-global-styles;
+@include foundation-grid;
+@include foundation-typography;
+//@include foundation-forms;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+//@include foundation-accordion;
+//@include foundation-badge;
+//@include foundation-breadcrumbs;
+//@include foundation-button-group;
+//@include foundation-callout;
+//@include foundation-close-button;
+//@include foundation-drilldown-menu;
+//@include foundation-dropdown;
+//@include foundation-dropdown-menu;
+//@include foundation-flex-video;
+//@include foundation-label;
+//@include foundation-media-object;
+//@include foundation-menu;
+//@include foundation-off-canvas;
+//@include foundation-orbit;
+//@include foundation-pagination;
+//@include foundation-progress-bar;
+//@include foundation-slider;
+//@include foundation-sticky;
+//@include foundation-reveal;
+//@include foundation-switch;
+//@include foundation-table;
+//@include foundation-tabs;
+@include foundation-thumbnail;
+//@include foundation-title-bar;
+//@include foundation-tooltip;
+//@include foundation-top-bar;
+
+//@include motion-ui-transitions;
+//@include motion-ui-animations;
+
+//Custom Styles
+
+body {
+     height: 100%;
+   }
+
+   .wrapper {
+      min-height: 100%;
+      height: auto !important;
+      height: 100%;
+      margin: 0 auto 0;
+    }
+
+   #logo {
+     padding-top: 1.5rem;
+     margin-left: auto;
+     margin-right: auto;
+     width: 175px;
+   }
+
+   .lines-section {
+     margin-top: 10rem;
+     margin-bottom: 10rem;
+   }
+
+   a#armoire:hover {
+     position: relative;
+   }
+
+   a#armoire:hover::after {
+
+   }
+
+   p {
+     font-size: 1.3rem;
+     color: #4A4A4A;
+   }
+
+   h2 {
+     color: #6A7B76;
+     text-align: center;
+     font-size: 1.3rem;
+     margin-bottom: 1rem;
+     letter-spacing: .08rem;
+   }
+
+   footer, .push {
+     //height: 10rem;
+     background-color: #E1E5DE;
+   }
+
+   .footer-heading {
+     margin-top: 1.5rem;
+     text-align: center;
+     color: #6A7B76;
+     font-weight: 300;
+     letter-spacing: 0.025rem;
+     font-size: 1.5rem;
+   }
+   .footer-content {
+     margin-top: 2rem;
+     margin-bottom: 2rem;
+   }
+
+   address {
+     font-style: normal;
+   }
+   .social-icons {
+     list-style: none;
+     text-align: center;
+     font-size: 2.5rem;
+     color: #6A7B76;
+     margin-left: 0;
+     margin-top: -6px;
+   }
+
+   .social-icons > li {
+     display: inline-block;
+     margin-right: 10px;
+   }
+
+   .remove-link-color {
+     color: #6A7B76;
+   }
+
+   .block {
+     display: block;
+   }
+
+   .rights-disclaimer {
+     margin-top: 1.5rem;
+     padding-bottom: .4rem;
+     text-align: center;
+     color: #4A4A4A;
+     font-size: .8rem;
+   }
+
+   
