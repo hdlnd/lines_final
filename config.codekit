@@ -5052,17 +5052,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/new_website.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 38030,
-		"inputAbbreviatedPath": "\/img\/new_website.png",
-		"outputAbbreviatedPath": "\/img\/new_website.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/six_scents.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
