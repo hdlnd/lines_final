@@ -52,12 +52,12 @@ $('#tid').hover(
   }
 );
 
-$('#mystery').hover(
+$('#aa').hover(
   function () {
-    $('#mysteryLogo').addClass('hide');
-    $('#mysteryPic').removeClass('hide');
+    $('#aaLogo').addClass('hide');
+    $('#aaPic').removeClass('hide');
   }, function () {
-    $('#mysteryLogo').removeClass('hide');
-    $('#mysteryPic').addClass('hide');
+    $('#aaLogo').removeClass('hide');
+    $('#aaPic').addClass('hide');
   }
 );

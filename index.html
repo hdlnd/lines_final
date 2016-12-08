@@ -42,6 +42,18 @@
         <div class="column row small-centered medium-8">
           <div class="row small-up-2 medium-up-3">
               <div class="column">
+                <a target="_blank" id="aa" href="http://andersen-andersen.com/" alt="Anderesen - Andersen"><img id="aaLogo" class="thumbnail" src="img/aa_logo.png" alt="Anderesen - Andersen"><img id="aaPic" class="thumbnail hide" src="img/aa.jpg" alt="Anderesen - Andersen"></a>
+              </div>
+              <script type="text/javascript">
+                var mystery = document.getElementById('aa');
+                analytics.trackLink(aa, 'Clicked CTA', {
+                  text: 'Andersen - Andersen',
+                  category: 'Home Page',
+                  type: 'Brand Grid',
+                  pageTitle: document.title
+                });
+              </script>
+              <div class="column">
                 <a target="_blank" id="armoire" href="http://armoireofficielle.com" alt="Armoire Officielle"><img id="armoireLogo" class="thumbnail" src="img/armoire_officielle_logo.png" alt="Armoire Officielle"><img id="armoirePic" class="thumbnail hide" src="img/armoire_officielle.jpg" alt="Armoire Officielle"></a>
               </div>
               <script type="text/javascript">
@@ -96,18 +108,6 @@
                 var tid = document.getElementById('tid');
                 analytics.trackLink(tid, 'Clicked CTA', {
                   text: 'TID Watches',
-                  category: 'Home Page',
-                  type: 'Brand Grid',
-                  pageTitle: document.title
-                });
-              </script>
-              <div class="column">
-                <a target="_blank" id="mystery" href="mailto:hello@lines.agency"><img id="mysteryLogo" class="thumbnail" src="img/mystery_logo.png" alt="Who's next?"><img id="mysteryPic" class="thumbnail hide" src="img/mystery.png" alt="Who's next?"></a>
-              </div>
-              <script type="text/javascript">
-                var mystery = document.getElementById('mystery');
-                analytics.trackLink(mystery, 'Clicked CTA', {
-                  text: 'Who is next',
                   category: 'Home Page',
                   type: 'Brand Grid',
                   pageTitle: document.title
