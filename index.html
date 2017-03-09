@@ -23,6 +23,7 @@
     </script>
     <script src="https://use.fontawesome.com/192bf32d17.js"></script>
     <link rel="stylesheet" href="stylesheets/app.css">
+    <script src="js/modernizr.custom.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -34,7 +35,7 @@
       </header>
       <section id="about" class="lines-section">
           <div class="column row small-centered medium-7">
-            <p>We are a New York City based, fashion sales, distribution, and brand building agency. Built on a foundation of honesty, ethics, and real relationships; we make promises we can keep. Through professional representation of our brand partners, and a solid understanding of, and care for our retailers' concerns, Lines Agency provides long term growth for our brand and retail partners.</p>
+            <p>We are a New York City based, fashion sales, distribution, and product development agency. Built on a foundation of honesty, ethics, and experience; we make promises we can keep. Through professional representation of our brand partners, a solid understanding of the market, and a care for our retailers' concerns, Lines Agency provides long term growth for our brand and retail partners.</p>
           </div>
       </section>
       <section id="brands" class="lines-section">
@@ -48,18 +49,6 @@
                 var mystery = document.getElementById('aa');
                 analytics.trackLink(aa, 'Clicked CTA', {
                   text: 'Andersen - Andersen',
-                  category: 'Home Page',
-                  type: 'Brand Grid',
-                  pageTitle: document.title
-                });
-              </script>
-              <div class="column">
-                <a target="_blank" id="armoire" href="http://armoireofficielle.com" alt="Armoire Officielle"><img id="armoireLogo" class="thumbnail" src="img/armoire_officielle_logo.png" alt="Armoire Officielle"><img id="armoirePic" class="thumbnail hide" src="img/armoire_officielle.jpg" alt="Armoire Officielle"></a>
-              </div>
-              <script type="text/javascript">
-                var armoire = document.getElementById('armoire');
-                analytics.trackLink(armoire, 'Clicked CTA', {
-                  text: 'Armoire Officielle',
                   category: 'Home Page',
                   type: 'Brand Grid',
                   pageTitle: document.title
@@ -89,38 +78,52 @@
                   pageTitle: document.title
                 });
               </script>
-              <div class="column">
-                <a target="_blank" id="sixscents" href="http://six-scents.com"><img id="sixscentsLogo" class="thumbnail" src="img/six_scents_parfums_logo.png"><img id="sixscentsPic" class="thumbnail hide" src="img/six_scents.jpg"></a>
-              </div>
-              <script type="text/javascript">
-                var sixscents = document.getElementById('sixscents');
-                analytics.trackLink(sixscents, 'Clicked CTA', {
-                  text: 'Six Scents Parfums',
-                  category: 'Home Page',
-                  type: 'Brand Grid',
-                  pageTitle: document.title
-                });
-              </script>
-              <div class="column">
-                <a target="_blank" id="tid" href="http://tidwatches.com"><img id="tidLogo" class="thumbnail" src="img/tid_watches_logo.png"><img id="tidPic" class="thumbnail hide" src="img/tid_watches.jpg"></a>
-              </div>
-              <script type="text/javascript">
-                var tid = document.getElementById('tid');
-                analytics.trackLink(tid, 'Clicked CTA', {
-                  text: 'TID Watches',
-                  category: 'Home Page',
-                  type: 'Brand Grid',
-                  pageTitle: document.title
-                });
-              </script>
             </div>
           </div>
+        </div>
+      </section>
+      <section id="newsletter" class="lines-section">
+        <div class="column row small-centered medium-7">
+          <p>Please join our mailing list here, and get occasional updates; seriously, no spam.</p>
+        </div>
+        <div class="column row small-centered medium-5">
+          <form id="theForm" class="simform" autocomplete="off" action="https://agency.us10.list-manage.com/subscribe/post" method="POST">
+            <input type="hidden" name="u" value="aa827f2ff9ceb4dc6a1b154dd">
+            <input type="hidden" name="id" value="7e1c1dbda5">
+  					<div class="simform-inner">
+  						<ol class="questions">
+  							<li>
+  								<span><label for="q1">What's your first name?</label></span>
+  								<input id="q1" name="MERGE1" type="text"/>
+  							</li>
+  							<li>
+  								<span><label for="q2">What's your last name?</label></span>
+  								<input id="q2" name="MERGE2" type="text"/>
+  							</li>
+  							<li>
+  								<span><label for="q3">What's your email address?</label></span>
+  								<input id="q3" name="MERGE0" type="email"/>
+  							</li>
+  						</ol><!-- /questions -->
+  						<button class="submit" type="submit">Send answers</button>
+  						<div class="controls">
+  							<button class="next"></button>
+  							<div class="progress"></div>
+  							<span class="number">
+  								<span class="number-current"></span>
+  								<span class="number-total"></span>
+  							</span>
+  							<span class="error-message"></span>
+  						</div><!-- / controls -->
+  					</div><!-- /simform-inner -->
+  					<span class="final-message"></span>
+  				</form><!-- /simform -->
         </div>
       </section>
       <div class="push"></div>
     </div>
     <footer>
-      <!--<h1 class="footer-heading">We connect great brands with the top retailers.</h1> -->
+      <!-- <h1 class="footer-heading">We connect great brands with the top retailers.</h1> -->
       <div class="row column small-centered medium-8">
         <div class="small-12 medium-4 column footer-content">
           <address class="text-center">
@@ -211,7 +214,27 @@
       </div>
 
     </footer>
+    <script src="js/classie.js"></script>
+		<script src="js/stepsForm.js"></script>
+		<script>
+			var theForm = document.getElementById( 'theForm' );
 
+			new stepsForm( theForm, {
+				onSubmit : function( form ) {
+					// hide form
+					classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
+
+				
+					form.submit()
+
+
+					// let's just simulate something...
+					var messageEl = theForm.querySelector( '.final-message' );
+					messageEl.innerHTML = 'Thank you! We\'ll be in touch.';
+					classie.addClass( messageEl, 'show' );
+				}
+			} );
+		</script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.min.js"></script>
     <script src="js/app.js"></script>
