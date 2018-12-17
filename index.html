@@ -24,6 +24,7 @@
     <script src="https://use.fontawesome.com/192bf32d17.js"></script>
     <link rel="stylesheet" href="stylesheets/app.css">
     <script src="js/modernizr.custom.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
     <div class="wrapper">
@@ -105,7 +106,7 @@
   								<input id="q3" name="MERGE0" type="email"/>
   							</li>
   						</ol><!-- /questions -->
-  						<button class="submit" type="submit">Send answers</button>
+  						<button class="submit g-recaptcha" data-sitekey="6LdRp4IUAAAAAJ69-cu95mqwqfGzSQHpXCEM2bSm" data-callback='onSubmit' type="submit">Send answers</button>
   						<div class="controls">
   							<button class="next"></button>
   							<div class="progress"></div>
@@ -224,7 +225,7 @@
 					// hide form
 					classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
 
-				
+
 					form.submit()
 
 
